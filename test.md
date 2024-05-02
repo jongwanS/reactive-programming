@@ -117,7 +117,7 @@ public class ReactorTest {
   - JVM에서 실행 중인 실시간 스레드의 수  
 ![image](https://github.com/jongwanS/reactive-programming/assets/30585897/f3a120cf-9aae-4196-84ab-14af33dcbe2a)  
 
-- webflux-nonblocking 확대
+- webflux-nonblocking 확대  
 ![image](https://github.com/jongwanS/reactive-programming/assets/30585897/df253c13-c570-40d6-984e-c35f956cfd5c)
 
 > **Webflux 의 도입 목적**  
