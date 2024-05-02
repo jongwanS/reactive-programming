@@ -19,22 +19,22 @@
 #### 전통적인 thread 모델 vs 비동기 논블로킹 모델
 - thread 기반 모델 (Request per thread)  
 ![image](https://github.com/jongwanS/reactive-programming/assets/30585897/8011f1b9-d390-4223-8661-9eb1d46f2a1a)  
-출처 : 네이버 d2 유투브
+출처 : 네이버 d2 유투브  
 
 - 비동기 논블로킹 모델  
-![image](https://github.com/jongwanS/reactive-programming/assets/30585897/9286059a-1557-4879-9dc4-ce2bbd35fcaa)
+![image](https://github.com/jongwanS/reactive-programming/assets/30585897/9286059a-1557-4879-9dc4-ce2bbd35fcaa)  
 출처 : 네이버 d2 유투브  
 
 #### Webflux
 - Reactor 기반으로 구현된 웹 프레임워크
 - 동작 흐름도
   - 메인 쓰레드풀과 별도로 **webflux 내부 쓰레드풀에서 발행&구독 처리**  
-![image](https://github.com/jongwanS/reactive-programming/assets/30585897/2bb28ef4-8b4c-418f-8665-c23c95180451)
+![image](https://github.com/jongwanS/reactive-programming/assets/30585897/2bb28ef4-8b4c-418f-8665-c23c95180451)  
 출처 : 네이버 d2 유투브  
 
 ---
-#### 정말 비동기로 동작할까? (코드)
-![image](https://github.com/jongwanS/reactive-programming/assets/30585897/daae7ca3-252d-436a-bb3a-b1132768fe1d)  
+#### 정말 비동기로 동작할까? (코드)  
+![image](https://github.com/jongwanS/reactive-programming/assets/30585897/daae7ca3-252d-436a-bb3a-b1132768fe1d)   
 ````java
 public class ReactorTest {
 
@@ -120,10 +120,10 @@ public class ReactorTest {
 
 - webflux-nonblocking 확대
   - 리액터 내부 스레드를 사용하기 때문에, 톰캣 메인 스레드는 거의 사용량이 없음  
-![image](https://github.com/jongwanS/reactive-programming/assets/30585897/df253c13-c570-40d6-984e-c35f956cfd5c)
+![image](https://github.com/jongwanS/reactive-programming/assets/30585897/df253c13-c570-40d6-984e-c35f956cfd5c)  
 
 > **Webflux 의 도입 목적**  
-> - Thread, CPU, Memory 의 자원을 낭비하지 않고 더 많은 요청을 처리할 수 있는 고성능 웹 어플리케이션을 개발하는 것이 목적
+> - Thread, CPU, Memory 의 자원을 낭비하지 않고 더 많은 요청을 처리할 수 있는 고성능 웹 어플리케이션을 개발하는 것이 목적  
 
 #### 스프링에서 어떤식으로 mono/flux 를 구독할까?
 - controller 에서 mono or flux 리턴 → 프레임워크에서 구독(subscribes) 처리
