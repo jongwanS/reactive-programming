@@ -1,4 +1,4 @@
-![image](https://github.com/jongwanS/reactive-programming/assets/30585897/29fc4752-0607-4265-b416-b9def8a3fd70)# Webflux 도입 필요성
+# Webflux 도입 필요성
 #### 리액티브 프로그래밍
   - 비동기 & 이벤트 기반 패러다임
 
