@@ -111,9 +111,9 @@ public class ReactorTest {
 }
 ````
 #### Webflux, 쓰레드 자원을 정말 효율적으로 쓸까?  
-![image](https://github.com/jongwanS/reactive-programming/assets/30585897/f34eeae2-7809-442c-a04b-b59d2660b395)  
+![image](https://github.com/jongwanS/reactive-programming/assets/30585897/f34eeae2-7809-442c-a04b-b59d2660b395)    
 
-- 그라파냐 메트릭 정보 확인
+- 그라파냐 메트릭 정보 확인  
   - JVM에서 실행 중인 실시간 스레드의 수  
 ![image](https://github.com/jongwanS/reactive-programming/assets/30585897/f3a120cf-9aae-4196-84ab-14af33dcbe2a)  
 
