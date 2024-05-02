@@ -114,10 +114,12 @@ public class ReactorTest {
 ![image](https://github.com/jongwanS/reactive-programming/assets/30585897/f34eeae2-7809-442c-a04b-b59d2660b395)    
 
 - 그라파냐 메트릭 정보 확인  
-  - JVM에서 실행 중인 실시간 스레드의 수  
+  - JVM에서 실행 중인 실시간 스레드의 수
+  - 성능테스트시 기존 톰캣 스레드 200개의 활성 스레드 확인  
 ![image](https://github.com/jongwanS/reactive-programming/assets/30585897/f3a120cf-9aae-4196-84ab-14af33dcbe2a)  
 
-- webflux-nonblocking 확대  
+- webflux-nonblocking 확대
+  - 리액터 내부 스레드를 사용하기 때문에, 톰캣 메인 스레드는 거의 사용량이 없음  
 ![image](https://github.com/jongwanS/reactive-programming/assets/30585897/df253c13-c570-40d6-984e-c35f956cfd5c)
 
 > **Webflux 의 도입 목적**  
